@@ -1,9 +1,11 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import './Display.css'
 
-const Display = (props) => {
+const Display = ({value}) => {
   const [state, setState] = useState(0)
-
+  useEffect(()=>{
+    setState(value)
+  },[value])
   return <div className='display'>{state}</div>
 }
 

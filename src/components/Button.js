@@ -1,10 +1,12 @@
 import "./Button.css"
 
-const Button = ({ cName, value }) => {
+const Button = ({ cName, value, status }) => {
   const className = `button ${cName}`
   const handleClick = () => {
-    console.log("Click! ->", value)
+    status(value)
   }
+
+  
   return (
     <div className={className} onClick={handleClick}>
       {value}
