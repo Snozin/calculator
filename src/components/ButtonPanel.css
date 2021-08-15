@@ -1,0 +1,72 @@
+.panel {
+  border: 1px solid red;
+  display: grid;
+  grid-template-areas: 
+    "reset div mult less"
+    "num7 num8 num9 plus"
+    "num4 num5 num6 plus"
+    "num1 num2 num3 equal"
+    "num0 num0 dot equal";
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  width: 200px;
+}
+
+.button.num0 {
+  grid-area: num0;
+}
+.button.num1 {
+  grid-area: num1;
+}
+.button.num2 {
+  grid-area: num2;
+}
+.button.num3 {
+  grid-area: num3;
+}
+.button.num4 {
+  grid-area: num4;
+}
+.button.num5 {
+  grid-area: num5;
+}
+.button.num6 {
+  grid-area: num6;
+}
+.button.num7 {
+  grid-area: num7;
+}
+.button.num8 {
+  grid-area: num8;
+}
+.button.num9 {
+  grid-area: num9;
+}
+.button.plus{
+  grid-area: plus;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button.less{
+  grid-area: less;
+}
+.button.mult{
+  grid-area: mult;
+}
+.button.div{
+  grid-area: div;
+}
+.button.equal{
+  grid-area: equal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button.dot{
+  grid-area: dot;
+}
+.button.reset{
+  grid-area: reset;
+}
