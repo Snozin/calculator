@@ -19,4 +19,5 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px 150px;
 }

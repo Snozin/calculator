@@ -3,8 +3,6 @@ import Button from "./Button"
 import buttons from "../utils/setButtons"
 
 const ButtonPanel = () => {
- 
-  console.log(buttons)
   return (
     <div className="panel">
       {buttons.map(({ name, value }) => {

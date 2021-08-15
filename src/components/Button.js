@@ -1,11 +1,15 @@
-import './Button.css'
+import "./Button.css"
 
-const Button = ({cName, value})=> {
+const Button = ({ cName, value }) => {
   const className = `button ${cName}`
-
-  return <div className={className}>
-    {value} 
-  </div>
+  const handleClick = () => {
+    console.log("Click! ->", value)
+  }
+  return (
+    <div className={className} onClick={handleClick}>
+      {value}
+    </div>
+  )
 }
 
 export default Button

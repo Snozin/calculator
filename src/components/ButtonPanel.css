@@ -10,7 +10,7 @@
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   align-content: center;
-  width: 200px;
+  width: 100%;
 }
 
 .button.num0 {
