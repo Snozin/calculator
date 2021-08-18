@@ -1,7 +1,7 @@
 import "./App.css"
 import Display from "./components/Display"
 import ButtonPanel from "./components/ButtonPanel"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import calculate from "./utils/calculate"
 
 function App() {
