@@ -14,7 +14,7 @@ const plus = {
 }
 
 const less = {
-  name: "less",
+  name: "minus",
   value: "-",
 }
 
@@ -29,7 +29,7 @@ const divs = {
 }
 
 const equal = {
-  name: "equal",
+  name: "total",
   value: "=",
 }
 
@@ -42,6 +42,6 @@ const dot = {
   value: ".",
 }
 
-buttons.push(plus,less,mult,divs,equal,reset,dot)
+buttons.push(plus, less, mult, divs, equal, reset, dot)
 
 export default buttons

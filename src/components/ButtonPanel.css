@@ -2,11 +2,11 @@
   border: 1px solid red;
   display: grid;
   grid-template-areas: 
-    "reset div mult less"
+    "reset div mult minus"
     "num7 num8 num9 plus"
     "num4 num5 num6 plus"
-    "num1 num2 num3 equal"
-    "num0 num0 dot equal";
+    "num1 num2 num3 total"
+    "num0 num0 dot total";
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
   align-content: center;
@@ -49,8 +49,8 @@
   flex-direction: column;
   justify-content: center;
 }
-.button.less{
-  grid-area: less;
+.button.minus{
+  grid-area: minus;
 }
 .button.mult{
   grid-area: mult;
@@ -58,8 +58,8 @@
 .button.div{
   grid-area: div;
 }
-.button.equal{
-  grid-area: equal;
+.button.total{
+  grid-area: total;
   display: flex;
   flex-direction: column;
   justify-content: center;

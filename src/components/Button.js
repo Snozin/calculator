@@ -1,14 +1,18 @@
+import { useState } from "react"
 import "./Button.css"
 
-const Button = ({ cName, value, status }) => {
+const Button = ({ cName, value, digitHandler }) => {
   const className = `button ${cName}`
-  const handleClick = () => {
-    status(value)
-  }
 
+  const handleClick = () => {
+    digitHandler({
+      name:cName,
+      value: value.toString()
+    })
+  }
   
   return (
-    <div className={className} onClick={handleClick}>
+    <div className={className} onClick={handleClick} >
       {value}
     </div>
   )

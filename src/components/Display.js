@@ -1,12 +1,22 @@
+import "./Display.css"
 import { useState, useEffect } from "react"
-import './Display.css'
+import Log from "./Log"
 
-const Display = ({value}) => {
+const Display = ({ value, log }) => {
   const [state, setState] = useState(0)
-  useEffect(()=>{
-    setState(value)
-  },[value])
-  return <div className='display'>{state}</div>
+
+  // TODO Recibir los valores de los botones  y operar con ellos
+
+  // useEffect(() => {
+  //   setState(value)
+  // }, [value])
+
+  return (
+    <div className="display-container">
+      <Log data={log} />
+      <div className="display">{value}</div>
+    </div>
+  )
 }
 
 export default Display
